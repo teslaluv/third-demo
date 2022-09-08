@@ -76,22 +76,8 @@ variable "taskdef_template" {
 
 variable "app_image" {
   type = string
-  # default = "174462142093.dkr.ecr.us-east-1.amazonaws.com/test-rep:latest"
-  # 174462142093.dkr.ecr.us-east-1.amazonaws.com/app-env
   default = "716735117304.dkr.ecr.us-east-1.amazonaws.com/app-env:latest"
 }
-
-# locals {
-#   app_image = format("%s:%s", var.ecr_repository_url, var.image_tag)
-# }
-
-# variable "ecr_repository_url" {
-#   type = string
-# }
-
-# variable "image_tag" {
-#   type = string
-# }
 
 variable "ec2-sg-name" {
   type = string
@@ -102,16 +88,6 @@ variable "ec2-sg-description" {
   type = string
   default = "allow all"
 }
-
-# variable "lc-name" {
-#   type = string
-#   default = "test_ecs"
-# }
-
-# variable "lc-instance-type" {
-#   type = string
-#   default = "t2.micro"
-# }
 
 variable "ltemplate-name" {
   type = string
