@@ -1,2 +1,2 @@
-# Demo-3
+# Final Demo
 Creating a cluster, ECR and Init-build to build and push the image in the created ECR.
